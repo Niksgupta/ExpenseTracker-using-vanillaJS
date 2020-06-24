@@ -74,7 +74,7 @@
       //convert string into integer value using parseIT
       const expense = parseInt(textAmount, 10);
 
-      if (textDesc !== "" && !isNaN(expense) && expense > 0) {
+      if (textDesc !== "" && !isNaN(expense)) {
         expenseItem.desc = textDesc;
         expenseItem.amount = expense;
         expenseItem.moment = new Date();
